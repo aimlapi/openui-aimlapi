@@ -10,7 +10,9 @@
       "@openuidev/lang-core",
       "@openuidev/react-lang",
       "@openuidev/svelte-lang",
-      "@openuidev/vue-lang"
+      "@openuidev/vue-lang",
+      "@openuidev/angular-lang",
+      "@openuidev/a2ui"
     ],
     ["@openuidev/react-headless", "@openuidev/react-ui"]
   ],

@@ -10,22 +10,23 @@ OpenUI is a Generative UI toolkit for creating agents that respond with live, in
 
 ## OpenUI stack
 
-OpenUI includes three products for building and running Generative UI:
+OpenUI provides the building blocks for creating generated interfaces and running them reliably in production.
 
 <Cards>
   <Card title="OpenUI Lang" href="/docs/openui-lang">
-    A compact, line-based language for AI models to generate interfaces from your components. It is
-    predictable, stream-friendly, and uses up to [**67% fewer
-    tokens**](/docs/openui-lang/benchmarks) than JSON.
+    Generate UI from your components in up to 67% fewer tokens than JSON.
   </Card>
   <Card title="Gateway" href="/docs/gateway">
-    OpenRouter for Generative UI. Use one API to access models across providers, with automatic
-    failover and model-output correction that prevents broken interfaces.
+    OpenRouter for Generative UI, with provider fallbacks and Autofix built in.
   </Card>
-  <Card title="Observability" href="/docs/observability">
-    Production visibility for Generative UI. Trace generated interfaces and improve their
-    reliability.
+  <Card title="Autofix" href="/docs/autofix">
+    Fix model output that would break your UI, using your existing provider.
+  </Card>
+  <Card title="Reliability Monitoring" href="/docs/reliability">
+    Track failed generations, inspect affected interfaces, and spot recurring errors.
   </Card>
 </Cards>
+
+Learn about correction and monitoring options in [OpenUI in production](/docs/production).
 
 Ready to build? [Get started with OpenUI](/docs/getting-started).

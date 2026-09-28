@@ -304,6 +304,29 @@
     width: 100%;
   }
 
+  .content {
+    /* A host can flatten the copy column once the two desktop columns stack,
+       allowing the code panel to sit between the intro and the steps. */
+    display: var(--cloud-setup-content-display, flex);
+    gap: 32px;
+  }
+
+  .intro {
+    order: 1;
+  }
+
+  .codeColumn {
+    order: 2;
+  }
+
+  .stepper {
+    order: 3;
+  }
+
+  .integrationAction {
+    order: 4;
+  }
+
   .customers {
     width: calc(100% - 48px);
     margin-top: 120px;
@@ -317,10 +340,6 @@
 @media (max-width: 767px) {
   .inner {
     width: calc(100% - 32px);
-  }
-
-  .content {
-    gap: 32px;
   }
 
   .stepper[data-interactive="true"][data-step-count="2"] {

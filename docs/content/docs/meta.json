@@ -7,8 +7,14 @@
     "openui-lang",
     "build-agents",
     "agent",
+    "cookbooks",
+    "examples",
+    "demos",
+    "production",
     "gateway",
-    "observability",
+    "autofix",
+    "reliability",
+    "deploy",
     "api-reference"
   ]
 }

@@ -1,6 +1,14 @@
 import { createOpenAI } from "@ai-sdk/openai";
+import librarySpec from "@/generated/spec.json";
 import { generateSystemPrompt } from "@openuidev/lang-core";
-import { convertToModelMessages, stepCountIs, streamText, type UIMessage } from "ai";
+import {
+  convertToModelMessages,
+  createUIMessageStreamResponse,
+  stepCountIs,
+  streamText,
+  toUIMessageStream,
+  type UIMessage,
+} from "ai";
 
 import { requiredEnv } from "@/lib/env";
 import { resolveRequestedModel } from "@/lib/models";
@@ -30,14 +38,16 @@ export async function POST(req: Request) {
 
   const result = streamText({
     model: openai.chat(model),
-    system: generateSystemPrompt({ cloud: true }),
+    system: generateSystemPrompt({ cloud: true, library: librarySpec }),
     messages: await convertToModelMessages(messages),
     tools: appTools,
     stopWhen: stepCountIs(5),
     abortSignal: req.signal,
   });
 
-  return result.toUIMessageStreamResponse();
+  return createUIMessageStreamResponse({
+    stream: toUIMessageStream({ stream: result.stream }),
+  });
 }
 
 function badRequest(message: string): Response {

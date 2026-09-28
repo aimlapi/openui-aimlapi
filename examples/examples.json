@@ -31,6 +31,12 @@
       "envKey": "THESYS_API_KEY"
     },
     {
+      "title": "Angular",
+      "description": "An NG-ZORRO X chat interface rendering OpenUI Cloud responses with the Angular runtime.",
+      "path": "app-frameworks/angular",
+      "envKey": "THESYS_API_KEY"
+    },
+    {
       "title": "FastAPI",
       "description": "A Python FastAPI streaming backend with a React OpenUI client.",
       "path": "app-frameworks/fastapi",
@@ -52,6 +58,12 @@
       "title": "Vue",
       "description": "OpenUI Lang parsing and rendering in Nuxt and Vue.",
       "path": "app-frameworks/vue",
+      "envKey": "THESYS_API_KEY"
+    },
+    {
+      "title": "Conversational analytics",
+      "description": "Explore real Formula 1 lap times with OpenUI Gateway, streamed charts, and visible database tool calls.",
+      "path": "cookbooks/conversational-analytics",
       "envKey": "THESYS_API_KEY"
     },
     {
@@ -77,6 +89,11 @@
       "description": "A Pi coding-agent session on OpenUI Cloud.",
       "path": "harnesses/pi",
       "envKey": "THESYS_API_KEY"
+    },
+    {
+      "title": "Autofix",
+      "description": "Direct OpenAI generation with OpenUI Autofix API",
+      "path": "miscellaneous/autofix"
     },
     {
       "title": "Handsontable",

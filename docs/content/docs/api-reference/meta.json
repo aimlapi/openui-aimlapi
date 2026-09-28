@@ -8,8 +8,13 @@
     "react-ui",
     "assistant-ui",
     "langchain",
+    "server",
     "react-email",
     "devtools",
-    "cli"
+    "cli",
+    "angular-lang",
+    "vue-lang",
+    "svelte-lang",
+    "a2ui"
   ]
 }
